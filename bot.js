@@ -22,7 +22,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "ISA Edition";
+  botResponse = "ISA Edition:";
 
   options = {
     hostname: 'api.groupme.com',
