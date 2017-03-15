@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\Shane Jacob$/;
+      botRegex = /^\aye Chong how big is your hog?$/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
@@ -22,7 +22,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "ISA Edition:";
+  botResponse = "this big!";
 
   options = {
     hostname: 'api.groupme.com',
@@ -36,7 +36,7 @@ function postMessage() {
     "attachments" : [
     {
       "type"  : "image",
-      "url"   : "https://i.groupme.com/719x1080.jpeg.d834f9a5617c4276820cfdcc004c6ac3"
+      "url"   : "https://i.groupme.com/256x316.png.8c5c25ba00c147ff91d578c92705b661"
     }
   ]
   };
